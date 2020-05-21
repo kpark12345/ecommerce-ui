@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "keywords": [],
-  "author": "",
+  "author": "Kevin Park",
   "license": "ISC",
   "scripts": {
     "clean": "rm dist/bundle.js",

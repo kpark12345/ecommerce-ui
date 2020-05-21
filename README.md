@@ -1,6 +1,6 @@
 # where-to-next
 
-Empty project.
+Application providing information about quality of life statistics around the world.
 
 ## Building and running on localhost
 
