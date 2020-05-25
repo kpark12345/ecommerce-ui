@@ -27,10 +27,10 @@ let Header = (props) => {
       <Toolbar>
         {" "}
         <img
-          src="https://cdn.freebiesupply.com/logos/large/2x/amazon-analytics-logo-black-and-white.png"
+          src="https://i.imgur.com/jIVMinK.png"
           height="60"
           width="60"
-          style={{ paddingTop: 30 }}
+          style={{ paddingTop: 30, paddingLeft: 15 }}
         />
         <Grid
           container
