@@ -4,7 +4,7 @@ import rootReducers from "../reducers/index";
 
 const store = createStore(
   rootReducers,
-  { entry: "this is to preload state and can be left blank" },
+  { entry: "" },
   applyMiddleware(thunk)
 );
 
