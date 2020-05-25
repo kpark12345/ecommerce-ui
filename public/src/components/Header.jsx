@@ -63,6 +63,14 @@ let Header = (props) => {
             Map
           </Button>
           <Button
+          className={classes.button}
+          aria-controls="simple-menu"
+          aria-haspopup="true"
+          onClick={() => {}}
+        >
+          Sign Up
+        </Button>
+          <Button
             className={classes.button}
             aria-controls="simple-menu"
             aria-haspopup="true"
