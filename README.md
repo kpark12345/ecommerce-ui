@@ -38,6 +38,6 @@ npm run dev-start
 Open the file `public/dist/index.html` in your browser
 
 
-## API Reference - Teleport
+## API References
 https://developers.teleport.org/
-
+https://developer.adzuna.com/overview
