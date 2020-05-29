@@ -1,6 +1,5 @@
-# where-to-next
-
-Application providing information about quality of life statistics around the world.
+# twitterpicasso.com
+Official website of tw1tterpicasso.com
 
 ## Building and running on localhost
 
@@ -41,7 +40,4 @@ Open the file `public/dist/index.html` in your browser
 ## API References
 https://developers.teleport.org/
 <br/>
-<<<<<<< HEAD
 https://developer.adzuna.com/overview
-=======
->>>>>>> master
