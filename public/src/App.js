@@ -9,7 +9,7 @@ import HeaderContainer from "./containers/HeaderContainer";
 class App extends React.Component {
   render() {
     return (
-      <div style={{marginLeft:'10px', marginRight:'10px'}}>
+      <div>
       <HeaderContainer/>
      <TodoListContainer />
      <RenderTodosContainer />

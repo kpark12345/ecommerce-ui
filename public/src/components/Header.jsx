@@ -4,11 +4,13 @@ import Toolbar from "@material-ui/core/Toolbar";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
+import { Typography } from "@material-ui/core";
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    background: "#7BA5B8",
+    background: "#AFEEEE"
   },
   button: {
     color: "white",
@@ -21,62 +23,26 @@ let Header = (props) => {
   return (
     <div
       className={classes.root}
-      style={{ margin: 0, paddingBottom: 40, borderRadius: 10 }}
+      style={{ }}
     >
-      <AppBar position="static" color="default" />
+      <AppBar  style={{ margin: 0 }}/>
       <Toolbar>
         {" "}
-        <img
-          src="https://i.imgur.com/jIVMinK.png"
-          height="60"
-          width="60"
-          style={{ paddingTop: 30, paddingLeft: 15 }}
-        />
+        <Typography>@TW1TTERPICASSO</Typography>
         <Grid
           container
           justify="flex-end"
           alignItems="center"
-          style={{ paddingTop: 38 }}
+          style={{}}
         >
           <Button
             className={classes.button}
             aria-controls="simple-menu"
             aria-haspopup="true"
+            style={{color: 'black'}}
             onClick={() => {}}
           >
-            About Us
-          </Button>
-          <Button
-            className={classes.button}
-            aria-controls="simple-menu"
-            aria-haspopup="true"
-            onClick={() => {}}
-          >
-            Support
-          </Button>
-          <Button
-            className={classes.button}
-            aria-controls="simple-menu"
-            aria-haspopup="true"
-            onClick={() => {}}
-          >
-            Map
-          </Button>
-          <Button
-          className={classes.button}
-          aria-controls="simple-menu"
-          aria-haspopup="true"
-          onClick={() => {}}
-        >
-          Sign Up
-        </Button>
-          <Button
-            className={classes.button}
-            aria-controls="simple-menu"
-            aria-haspopup="true"
-            onClick={() => {}}
-          >
-            Login
+            <ShoppingCartIcon/>
           </Button>
         </Grid>
       </Toolbar>

@@ -11,10 +11,12 @@
     "build-dev": "webpack -d --mode development",
     "build-prod": "webpack -p --mode production",
     "start": "webpack-dev-server --hot --mode development",
-    "dev-start": "webpack -p --mode production && nodemon ./src/index.js"
+    "dev:build": "webpack -p --mode production --watch",
+    "dev:start": "nodemon ./src/index.js"
   },
   "dependencies": {
     "@material-ui/core": "^4.10.0",
+    "@material-ui/icons": "^4.9.1",
     "express": "^4.17.1",
     "node": "^14.2.0",
     "nodemon": "^2.0.4",
