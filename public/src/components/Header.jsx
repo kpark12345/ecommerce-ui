@@ -10,25 +10,53 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    background: "#AFEEEE"
+    background: "#50C878",
+    margin: '-10px'
   },
   button: {
-    color: "white",
+    color: "black",
     size: "medium",
+    marginLeft: '8px',
+    marginRight: '8px',
+    fontWeight: 'bold',
+    fontSize: '15px',
+    marginBottom: '20px'
   },
 }));
 
-let Header = (props) => {
+const Header = props => {
   const classes = useStyles();
   return (
     <div
       className={classes.root}
-      style={{ }}
     >
-      <AppBar  style={{ margin: 0 }}/>
+    <AppBar/>
       <Toolbar>
-        {" "}
-        <Typography>@TW1TTERPICASSO</Typography>
+        <Button
+            className={classes.button}
+            aria-controls="simple-menu"
+            aria-haspopup="true"
+            onClick={() => {}}
+          >HOME</Button>
+       
+          <Button
+          className={classes.button}
+          aria-controls="simple-menu"
+          aria-haspopup="true"
+          onClick={() => {}}
+        >LOOKBOOK</Button>
+        <Button
+          className={classes.button}
+          aria-controls="simple-menu"
+          aria-haspopup="true"
+          onClick={() => {}}
+        >FAQS</Button>
+        <Button
+          className={classes.button}
+          aria-controls="simple-menu"
+          aria-haspopup="true"
+          onClick={() => {}}
+        >ABOUT</Button>
         <Grid
           container
           justify="flex-end"
@@ -36,13 +64,11 @@ let Header = (props) => {
           style={{}}
         >
           <Button
-            className={classes.button}
             aria-controls="simple-menu"
             aria-haspopup="true"
-            style={{color: 'black'}}
             onClick={() => {}}
           >
-            <ShoppingCartIcon/>
+            <ShoppingCartIcon style={{marginBottom: '20px'}}/>
           </Button>
         </Grid>
       </Toolbar>

@@ -3,16 +3,16 @@ import { hot } from 'react-hot-loader/root';
 import TodoListContainer from "./containers/TodoListContainer";
 import RenderTodosContainer from "./containers/RenderTodosContainer";
 import HeaderContainer from "./containers/HeaderContainer";
+import BodyContainer from "./containers/BodyContainer";
 
-// import Container from "@material-ui/core/Container";
 
 class App extends React.Component {
   render() {
     return (
       <div>
       <HeaderContainer/>
-     <TodoListContainer />
-     <RenderTodosContainer />
+      <BodyContainer/>
+    
    </div>
     )
   }

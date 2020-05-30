@@ -1,8 +1,8 @@
 import React from "react";
 
-let TodoList = props => {
+const TodoList = props => {
   return (
-    <div>
+    <div style={{backgroundColor: 'black'}}>
       <input
         value={props.todoEntry}
         onChange={e => {
