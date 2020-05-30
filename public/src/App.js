@@ -1,33 +1,50 @@
 import React, { useEffect } from 'react';
 import { hot } from 'react-hot-loader/root';
-import TodoListContainer from "./containers/TodoListContainer";
-import RenderTodosContainer from "./containers/RenderTodosContainer";
 import HeaderContainer from "./containers/HeaderContainer";
 import BodyContainer from "./containers/BodyContainer";
 import FooterContainer from "./containers/FooterContainer";
-import Box from '@material-ui/core/Box';
 
 
+
+
+const debounce = (fn, ms) => {
+  let timer
+  return _ => {
+    clearTimeout(timer)
+    timer = setTimeout(_ => {
+      timer = null
+      fn.apply(this, arguments)
+    }, ms)
+  };
+}
 
 const App = props => {
   const [state, setWidth] = React.useState({ 
-    width: window.innerWidth
+    isMobile: false
   })
   
+
   useEffect(() => {
-    function handleResize() {
-      setWidth({
-        width: window.innerWidth
-      })
-    }
-    window.addEventListener('resize', handleResize)
+   const debouncedHandleResize = debounce(() => {
+      if(window.innerWidth <= 1022) {
+        setWidth({
+          isMobile: true
+        })
+      } else if (window.innerWidth > 1022) {
+        setWidth({
+          isMobile: false
+        })
+      }
+    }, 300)
+   return window.addEventListener('resize', debouncedHandleResize)
 })
   
   const renderView = () => {
-    if (state.width <= 712) {
-      console.log('here')
+    if (state.isMobile === true) {
+      console.log('mobile')
       return;
     } else {
+      console.log('browser', window.innerWidth)
       // console.log('WIDTH: ', state.width)
       return <div><HeaderContainer/><BodyContainer/><FooterContainer/></div>
     }
