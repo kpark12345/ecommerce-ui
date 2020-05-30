@@ -5,75 +5,68 @@ import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from '@material-ui/icons/Twitter';
+import FacebookIcon from '@material-ui/icons/Facebook';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    background: "#50C878",
-    margin: '-10px'
+    background: "#FFCC00",
+    margin: "-10px"
   },
   button: {
     color: "black",
     size: "medium",
-    marginLeft: '8px',
-    marginRight: '8px',
-    fontWeight: 'bold',
-    fontSize: '15px',
-    marginBottom: '20px'
+    marginLeft: "8px",
+    marginRight: "8px",
+    fontWeight: "bold",
+    fontSize: "15px",
+    marginBottom: "20px",
   },
+  Text: {
+    fontFamily:'Roboto'
+  }
 }));
 
-const Header = props => {
+const Footer = props => {
   const classes = useStyles();
   return (
-    <div
-      className={classes.root}
-    >
-    <AppBar />
+    <div className={classes.root}>
+      <AppBar/>
       <Toolbar>
         <Button
-            className={classes.button}
-            aria-controls="simple-menu"
-            aria-haspopup="true"
-            onClick={() => {}}
-          >HOME</Button>
-       
-          <Button
-          className={classes.button}
           aria-controls="simple-menu"
           aria-haspopup="true"
           onClick={() => {}}
-        >LOOKBOOK</Button>
+        >
+          <InstagramIcon />
+        </Button>
         <Button
-          className={classes.button}
           aria-controls="simple-menu"
           aria-haspopup="true"
           onClick={() => {}}
-        >FAQS</Button>
+        >
+          <TwitterIcon />
+        </Button>
         <Button
-          className={classes.button}
           aria-controls="simple-menu"
           aria-haspopup="true"
           onClick={() => {}}
-        >ABOUT</Button>
+        >
+          <FacebookIcon />
+        </Button>
         <Grid
           container
           justify="flex-end"
           alignItems="center"
           style={{}}
         >
-          <Button
-            aria-controls="simple-menu"
-            aria-haspopup="true"
-            onClick={() => {}}
-          >
-            <ShoppingCartIcon style={{marginBottom: '20px'}}/>
-          </Button>
+        <Typography className={classes.text}>@tw1tterpicasso</Typography>
         </Grid>
       </Toolbar>
     </div>
   );
 };
 
-export default Header;
+export default Footer;

@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     margin:'-10px',
     marginTop:'-20px',
     backgroundColor: 'black',
-    height: '900px'
+    height: '930px'
   },
   backgroundPaper: {
 
