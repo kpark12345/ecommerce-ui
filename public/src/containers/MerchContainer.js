@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import Body from "./../components/Body.jsx";
+import Merch from "./../components/Merch.jsx";
 
  const mapStateToProps = store => ({
   
@@ -9,9 +9,9 @@ import Body from "./../components/Body.jsx";
   
 });
 
- const BodyContainer = connect(
+ const MerchContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Body);
+)(Merch);
 
-export default BodyContainer;
+export default MerchContainer;

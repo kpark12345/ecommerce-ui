@@ -5,12 +5,12 @@ import handleAddTodo from "./../actions/handleAddTodo.js";
 
 
 
-var mapStateToProps = store => ({
+const mapStateToProps = store => ({
   entry: store.entry,
   todos: store.todos
 });
 
-var mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = dispatch => ({
   handleTodoEntry: event => {
     dispatch(handleTodoEntry(event));
   },
@@ -19,7 +19,7 @@ var mapDispatchToProps = dispatch => ({
   }
 });
 
-var TodoListContainer = connect(
+const TodoListContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(TodoList);

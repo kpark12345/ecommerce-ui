@@ -11,7 +11,7 @@ import Box from '@material-ui/core/Box';
 class App extends React.Component {
   render() {
     return (
-      <div style={{maxHeight: '1000px'}}>
+      <div style={{maxHeight: '1300px'}}>
       <HeaderContainer/>
       <BodyContainer/>
       <FooterContainer/>

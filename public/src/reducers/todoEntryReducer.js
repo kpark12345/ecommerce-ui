@@ -1,6 +1,6 @@
 import Redux from "redux";
 
-var todoEntryReducer = (state = '', action) => {
+const todoEntryReducer = (state = '', action) => {
   switch (action.type) {
     case "CHANGE_TODO_ENTRY":
       return action.entry;

@@ -1,15 +1,15 @@
 import { connect } from "react-redux";
 import Header from "./../components/Header.jsx";
 
-var mapStateToProps = store => ({
+const mapStateToProps = store => ({
   
 });
 
-var mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = dispatch => ({
   
 });
 
-var HeaderContainer = connect(
+const HeaderContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Header);

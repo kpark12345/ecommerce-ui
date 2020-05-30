@@ -1,15 +1,15 @@
 import { connect } from "react-redux";
 import Footer from "./../components/Footer.jsx";
 
-var mapStateToProps = store => ({
+const mapStateToProps = store => ({
   
 });
 
-var mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = dispatch => ({
   
 });
 
-var FooterContainer = connect(
+const FooterContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Footer);

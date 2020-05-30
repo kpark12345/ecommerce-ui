@@ -1,15 +1,15 @@
 import { connect } from "react-redux";
 import RenderTodos from "./../components/RenderTodos.jsx";
 
-var mapStateToProps = store => ({
+const mapStateToProps = store => ({
   todos: store.todos
 });
 
-var mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = dispatch => ({
   
 });
 
-var RenderTodosContainer = connect(
+const RenderTodosContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(RenderTodos);
