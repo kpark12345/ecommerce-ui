@@ -20,7 +20,7 @@ const debounce = (fn, ms) => {
 
 const App = props => {
   const [state, setWidth] = React.useState({ 
-    isMobile: false
+    isMobile: window.innerWidth <= 1022 ? true : false
   })
   
 
@@ -42,7 +42,7 @@ const App = props => {
   const renderView = () => {
     if (state.isMobile === true) {
       console.log('mobile')
-      return;
+      return <div><p>Testing</p></div>
     } else {
       console.log('browser', window.innerWidth)
       // console.log('WIDTH: ', state.width)
