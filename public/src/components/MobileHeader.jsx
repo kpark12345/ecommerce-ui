@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '15px'
   },
   menuButton: {
-    marginLeft: '15px',
     color:'grey'
   }
 }));
@@ -36,7 +35,7 @@ const MobileHeader = props => {
     >
     <AppBar style={{background:'black'}} >
     <Tabs  aria-label="simple tabs example">
-    <IconButton edge="start" color="inherit" aria-label="menu">
+    <IconButton edge="start" color="inherit" aria-label="menu" style={{ marginLeft: '10px'}}>
     <MenuIcon className={classes.menuButton}/>
   </IconButton>
         <Tab label="HOME"  style={{color:'red'}}/>
