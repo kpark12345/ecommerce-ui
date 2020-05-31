@@ -5,6 +5,7 @@ import BodyContainer from "./containers/BodyContainer";
 import FooterContainer from "./containers/FooterContainer";
 
 import MobileHeaderContainer from "./containers/MobileHeaderContainer";
+import MobileBodyContainer from "./containers/MobileBodyContainer";
 
 const debounce = (fn, ms) => {
   let timer;
@@ -17,7 +18,7 @@ const debounce = (fn, ms) => {
   };
 };
 
-const App = (props) => {
+const App = props => {
   const [state, setWidth] = React.useState({
     isMobile: window.innerWidth <= 1022 ? true : false,
   });
@@ -42,7 +43,7 @@ const App = (props) => {
       console.log("mobile");
       return (
         <div>
-          <MobileHeaderContainer />
+          <MobileHeaderContainer /><MobileBodyContainer/>
         </div>
       );
     } else {

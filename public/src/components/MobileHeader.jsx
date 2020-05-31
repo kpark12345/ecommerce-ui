@@ -48,8 +48,8 @@ const MobileHeader = (props) => {
             <MenuIcon className={classes.menuButton} />
           </IconButton>
           <Tab label="HOME" className={classes.tab} />
-          <Tab label="ABOUT" className={classes.tab} />
-          <Tab label="CONTACT US" className={classes.tab} />
+          <Tab label="FAQS" className={classes.tab} />
+          <Tab label="ABOUT US" className={classes.tab} />
           <Grid container justify="flex-end" alignItems="center" style={{}}>
             <Button
               aria-controls="simple-menu"

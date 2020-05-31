@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "100px",
   },
   merch: {
-    width: "400px",
+    maxWidth: "400px",
   },
 }));
 
