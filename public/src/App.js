@@ -4,6 +4,8 @@ import HeaderContainer from "./containers/HeaderContainer";
 import BodyContainer from "./containers/BodyContainer";
 import FooterContainer from "./containers/FooterContainer";
 
+import MobileHeaderContainer from "./containers/MobileHeaderContainer";
+
 
 
 
@@ -42,7 +44,7 @@ const App = props => {
   const renderView = () => {
     if (state.isMobile === true) {
       console.log('mobile')
-      return <div><p>Testing</p></div>
+      return <div><MobileHeaderContainer/></div>
     } else {
       console.log('browser', window.innerWidth)
       // console.log('WIDTH: ', state.width)
