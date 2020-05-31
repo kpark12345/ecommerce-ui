@@ -47,6 +47,7 @@ const MobileHeader = (props) => {
   const classes = useStyles();
   const [state, setState] = React.useState({
     right: false,
+    left: false
   });
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -98,6 +99,7 @@ const MobileHeader = (props) => {
             edge="start"
             color="inherit"
             aria-label="menu"
+            onClick={toggleDrawer("left", true)}
             style={{ marginLeft: "10px" }}
           >
             <MenuIcon className={classes.menuButton} />
@@ -123,6 +125,13 @@ const MobileHeader = (props) => {
           onClose={toggleDrawer("right", false)}
         >
           {list("right")}
+        </Drawer>
+        <Drawer
+          anchor={"left"}
+          open={state["left"]}
+          onClose={toggleDrawer("left", false)}
+        >
+          {list("left")}
         </Drawer>
       </div>
     </div>
