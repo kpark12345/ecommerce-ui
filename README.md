@@ -32,6 +32,4 @@ Open the file `public/dist/index.html` in your browser
 
 
 ## API References
-https://developers.teleport.org/
-<br/>
-https://developer.adzuna.com/overview
+
