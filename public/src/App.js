@@ -18,7 +18,7 @@ const debounce = (fn, ms) => {
   };
 };
 
-const App = props => {
+const App = (props) => {
   const [state, setWidth] = React.useState({
     isMobile: window.innerWidth <= 1022 ? true : false,
   });
@@ -43,7 +43,8 @@ const App = props => {
       console.log("mobile");
       return (
         <div>
-          <MobileHeaderContainer /><MobileBodyContainer/>
+          <MobileHeaderContainer />
+          <MobileBodyContainer />
         </div>
       );
     } else {

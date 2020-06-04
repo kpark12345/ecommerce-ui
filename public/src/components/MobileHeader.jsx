@@ -47,7 +47,7 @@ const MobileHeader = (props) => {
   const classes = useStyles();
   const [state, setState] = React.useState({
     right: false,
-    left: false
+    left: false,
   });
   const toggleDrawer = (anchor, open) => (event) => {
     if (
