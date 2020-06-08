@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,10 +23,12 @@ const MobileMerch = (props) => {
     <React.Fragment>
       <div className={classes.root}>
         <div>
-          <img
-            src="https://i.imgur.com/Sk1CGlu.png"
-            className={classes.merch}
-          />
+          <Button>
+            <img
+              src="https://i.imgur.com/Sk1CGlu.png"
+              className={classes.merch}
+            />
+          </Button>
           <Typography
             style={{
               color: "white",
@@ -38,10 +41,12 @@ const MobileMerch = (props) => {
         </div>
 
         <div>
-          <img
-            src="https://i.imgur.com/Sk1CGlu.png"
-            className={classes.merch}
-          />
+          <Button>
+            <img
+              src="https://i.imgur.com/Sk1CGlu.png"
+              className={classes.merch}
+            />
+          </Button>
           <Typography
             style={{
               color: "white",
@@ -55,10 +60,12 @@ const MobileMerch = (props) => {
       </div>
       <div className={classes.root}>
         <div>
-          <img
-            src="https://i.imgur.com/Sk1CGlu.png"
-            className={classes.merch}
-          />
+          <Button>
+            <img
+              src="https://i.imgur.com/Sk1CGlu.png"
+              className={classes.merch}
+            />
+          </Button>
           <Typography
             style={{
               color: "white",
@@ -70,10 +77,12 @@ const MobileMerch = (props) => {
           </Typography>
         </div>
         <div>
-          <img
-            src="https://i.imgur.com/Sk1CGlu.png"
-            className={classes.merch}
-          />
+          <Button>
+            <img
+              src="https://i.imgur.com/Sk1CGlu.png"
+              className={classes.merch}
+            />
+          </Button>
           <Typography
             style={{
               color: "white",

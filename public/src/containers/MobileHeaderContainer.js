@@ -1,12 +1,15 @@
 import { connect } from "react-redux";
 import MobileHeader from "./../components/MobileHeader.jsx";
+import handleMerchClicked from "./../actions/handleMerchClicked.js";
 
 const mapStateToProps = store => ({
-  
+  isClicked: store.merch
 });
 
 const mapDispatchToProps = dispatch => ({
-  
+  handleMerchClicked: clicked => {
+    dispatch(handleMerchClicked(clicked));
+  }
 });
 
 const MobileHeaderContainer = connect(

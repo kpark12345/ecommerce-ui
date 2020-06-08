@@ -104,7 +104,10 @@ const MobileHeader = (props) => {
           >
             <MenuIcon className={classes.menuButton} />
           </IconButton>
-          <Tab label="HOME" className={classes.tab} />
+          <Tab label="HOME" className={classes.tab} onClick={() => {
+            props.handleMerchClicked(!props.isClicked)
+            console.log(props)
+          }}/>
           <Tab label="FAQS" className={classes.tab} />
           <Tab label="ABOUT US" className={classes.tab} />
           <Grid container justify="flex-end" alignItems="center" style={{}}>

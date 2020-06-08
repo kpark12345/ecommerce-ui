@@ -1,17 +1,18 @@
 import { connect } from "react-redux";
-import Body from "./../components/Body.jsx";
+import Product from "./../components/Product.jsx";
+
 
  const mapStateToProps = store => ({
-  productClicked: store.merch
+  
 });
 
  const mapDispatchToProps = dispatch => ({
   
 });
 
- const BodyContainer = connect(
+ const ProductContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Body);
+)(Product);
 
-export default BodyContainer;
+export default ProductContainer;

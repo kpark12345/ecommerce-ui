@@ -94,7 +94,9 @@ const Header = (props) => {
           className={classes.button}
           aria-controls="simple-menu"
           aria-haspopup="true"
-          onClick={() => {}}
+          onClick={() => {
+            props.handleMerchClicked(!props.isClicked)
+          }}
         >
           HOME
         </Button>

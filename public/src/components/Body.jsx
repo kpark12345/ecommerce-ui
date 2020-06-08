@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import MerchContainer from "../containers/MerchContainer";
+import ProductContainer from "../containers/ProductContainer";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -13,6 +14,26 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Body = props => {
+
+  const renderView = () => {
+    if (props.productClicked === true) {
+      console.log("product clicked");
+      return (
+        <div>
+          <ProductContainer/>
+        </div>
+      );
+    } else {
+      console.log("product not clicked");
+      // console.log('WIDTH: ', state.width)
+      return (
+        <div>
+        <MerchContainer/>
+        </div>
+      );
+    }
+  };
+  
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -20,7 +41,7 @@ const Body = props => {
       <img src="https://i.imgur.com/Uj1Y8Zi.png" style={{maxWidth: '400px', marginTop: '50px'}}></img>
      </div>
      <React.Fragment>
-      <MerchContainer/>
+      {renderView()}
      </React.Fragment>
     </div>
   );
