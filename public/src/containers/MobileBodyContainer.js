@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import MobileBody from "./../components/MobileBody.jsx";
 
  const mapStateToProps = store => ({
-  
+  productClicked: store.merch
 });
 
  const mapDispatchToProps = dispatch => ({

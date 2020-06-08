@@ -23,7 +23,9 @@ const MobileMerch = (props) => {
     <React.Fragment>
       <div className={classes.root}>
         <div>
-          <Button>
+          <Button onClick={() => {
+            props.handleMerchClicked(!props.productClicked)
+          }}>
             <img
               src="https://i.imgur.com/Sk1CGlu.png"
               className={classes.merch}
