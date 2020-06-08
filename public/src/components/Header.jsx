@@ -95,7 +95,7 @@ const Header = (props) => {
           aria-controls="simple-menu"
           aria-haspopup="true"
           onClick={() => {
-            props.handleMerchClicked(!props.isClicked)
+            props.handleMerchClicked(false)
           }}
         >
           HOME

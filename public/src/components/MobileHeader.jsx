@@ -105,7 +105,7 @@ const MobileHeader = (props) => {
             <MenuIcon className={classes.menuButton} />
           </IconButton>
           <Tab label="HOME" className={classes.tab} onClick={() => {
-            props.handleMerchClicked(!props.isClicked)
+            props.handleMerchClicked(false)
             console.log(props)
           }}/>
           <Tab label="FAQS" className={classes.tab} />
