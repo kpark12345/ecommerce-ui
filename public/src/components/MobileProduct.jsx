@@ -11,7 +11,7 @@ const MobileProduct = props => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-    <button>test</button>
+    <p>Product</p>
     </div>
   );
 };
