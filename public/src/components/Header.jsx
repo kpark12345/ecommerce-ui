@@ -57,12 +57,7 @@ const Header = (props) => {
   };
   const list = (anchor) => (
     <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === "top" || anchor === "bottom",
-      })}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
+      role="checkout"
     >
       <List style={{display:'flex', justifyContent: 'center'}}>
         <Typography>YOUR CART</Typography>

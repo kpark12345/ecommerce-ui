@@ -8,6 +8,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import { Typography } from "@material-ui/core";
 
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
@@ -59,38 +60,46 @@ const MobileHeader = (props) => {
 
     setState({ ...state, [anchor]: open });
   };
-  const list = (anchor) => (
-    <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === "top" || anchor === "bottom",
-      })}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+  const list = (anchor) => {
+    if(anchor === 'right') {
+      return (
+        <div
+        role="mobile-checkout"
+      >
+        <List style={{display:'flex', justifyContent: 'center'}}>
+        <Typography>YOUR CART</Typography>
       </List>
       <Divider />
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <p>Example Product</p>
       </List>
-    </div>
-  );
+      <Divider />
+      <List>
+        <p>Payment Methods</p>
+      </List>
+      </div>
+      )
+    } else if (anchor === 'left') {
+      return (
+        <div
+        role="mobile-sidenav"
+      >
+        <List style={{display:'flex', justifyContent: 'center'}}>
+        <Typography>Home</Typography>
+      </List>
+      <Divider />
+      <List>
+        <p>FAQS</p>
+      </List>
+      <Divider />
+      <List>
+        <p>ABOUT US</p>
+      </List>
+      </div>
+      )
+    }
+  }
+  
   return (
     <div className={classes.root}>
       <AppBar style={{ background: "black" }}>
