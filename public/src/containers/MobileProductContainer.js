@@ -3,7 +3,7 @@ import MobileProduct from "./../components/MobileProduct.jsx";
 
 
  const mapStateToProps = store => ({
-  productClicked: store.merch
+  productClicked: store.productClicked
 });
 
  const mapDispatchToProps = dispatch => ({

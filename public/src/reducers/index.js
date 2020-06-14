@@ -3,14 +3,14 @@ import { combineReducers } from 'redux';
 // import below your specified reducers to create a link to the rootReducer (aka. your store)
 import entry from './todoEntryReducer';
 import todos from './todosReducer';
-import merch from './merchReducer';
+import merchClicked from './merchClickedReducer';
 
 
 const rootReducers = combineReducers({
     // add reducer file references here
     entry,
     todos,
-    merch
+    merchClicked
 });
 
 export default rootReducers;

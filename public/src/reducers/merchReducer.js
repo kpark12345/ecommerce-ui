@@ -1,8 +1,8 @@
 import Redux from "redux";
 
-const merchReducer = (state = false, action) => {
+const productClickedReducer = (state = false, action) => {
   switch (action.type) {
-    case "MERCH_CLICKED":
+    case "PRODUCT_CLICKED":
       return action.clicked;
     default:
       return state;
@@ -13,4 +13,4 @@ const merchReducer = (state = false, action) => {
 
 
 
-export default merchReducer;
+export default productClickedReducer;

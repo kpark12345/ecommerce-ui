@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import Body from "./../components/Body.jsx";
 
  const mapStateToProps = store => ({
-  productClicked: store.merch
+  productClicked: store.productClicked
 });
 
  const mapDispatchToProps = dispatch => ({

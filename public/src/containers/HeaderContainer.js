@@ -3,7 +3,7 @@ import Header from "./../components/Header.jsx";
 import handleMerchClicked from "./../actions/handleMerchClicked.js";
 
 const mapStateToProps = store => ({
-  productClicked: store.merch
+  productClicked: store.productClicked
 });
 
 const mapDispatchToProps = dispatch => ({
