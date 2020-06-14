@@ -7,12 +7,11 @@
   "author": "Kevin Park",
   "license": "ISC",
   "scripts": {
-    "clean": "rm dist/bundle.js",
-    "build-dev": "webpack -d --mode development",
-    "build-prod": "webpack -p --mode production",
-    "start": "webpack-dev-server --hot --mode development",
+    "prod:build": "webpack -p --mode production",
     "dev:build": "webpack -p --mode production --watch",
-    "dev:start": "nodemon ./src/index.js"
+    "start": "webpack-dev-server --hot --mode development",
+    "dev:start": "nodemon ./src/index.js",
+    "clean": "rm dist/bundle.js"
   },
   "dependencies": {
     "@material-ui/core": "^4.10.0",
