@@ -1,18 +1,19 @@
 import { connect } from "react-redux";
 import Merch from "./../components/Merch.jsx";
-import handleMerchClicked from "./../actions/handleMerchClicked.js";
-import handleMerchObject from "./../actions/handleMerchObject.js";
+import handleProductClicked from "./../actions/handleProductClicked.js";
+import handleProductObject from "./../actions/handleProductObject.js";
 
  const mapStateToProps = store => ({
-  productClicked: store.productClicked
+  productClicked: store.productClicked,
+
 });
 
  const mapDispatchToProps = dispatch => ({
-  handleMerchClicked: clicked => {
-    dispatch(handleMerchClicked(clicked));
+  handleProductClicked: clicked => {
+    dispatch(handleProductClicked(clicked));
   },
-  handleMerchObject: merch => {
-    dispatch(handleAddTodo(merch));
+  handleProductObject: product => {
+    dispatch(handleAddTodo(product));
   }
 });
 
