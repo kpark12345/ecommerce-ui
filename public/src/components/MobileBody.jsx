@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import MobileMerchContainer from "../containers/MobileMerchContainer";
-import MobileProductContainer from "../containers/ProductContainer";
+import MobileProductContainer from "../containers/MobileProductContainer";
 const useStyles = makeStyles(theme => ({
   root: {
     background: 'black',
@@ -15,14 +15,14 @@ const MobileBody = props => {
 
   const renderView = () => {
     if (props.productClicked === true) {
-      console.log("product clicked");
+      console.log("product clicked (mobile)");
       return (
         <div>
           <MobileProductContainer/>
         </div>
       );
     } else {
-      console.log("product not clicked");
+      console.log("product not clicked (mobile)");
       return (
         <div>
         <MobileMerchContainer/>

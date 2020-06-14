@@ -25,6 +25,7 @@ const MobileMerch = (props) => {
         <div>
           <Button onClick={() => {
             props.handleProductClicked(!props.productClicked)
+            props.handleProductObject({name: 'TEST PRODUCT', img: "https://i.imgur.com/Sk1CGlu.png"})
           }}>
             <img
               src="https://i.imgur.com/Sk1CGlu.png"

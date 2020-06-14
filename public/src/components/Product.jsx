@@ -15,7 +15,7 @@ const Product = props => {
     <button onClick={()=> {
       console.log('props', props)
     }}>test</button>
-    <p style={{color:'white'}}>PRODUCT PAGE</p>
+    <p style={{color:'white'}}>PRODUCT PAGE (Desktop)</p>
     </div>
   );
 };

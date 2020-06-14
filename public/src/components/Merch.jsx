@@ -21,7 +21,6 @@ const Merch = (props) => {
       <div className={classes.root}>
         <div>
           <Button onClick={() => {
-            console.log(props)
             props.handleProductClicked(!props.productClicked)
             props.handleProductObject({name: 'TEST PRODUCT', img: "https://i.imgur.com/Sk1CGlu.png"})
           }}>
