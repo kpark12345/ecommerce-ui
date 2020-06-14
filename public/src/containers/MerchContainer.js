@@ -13,7 +13,7 @@ import handleProductObject from "./../actions/handleProductObject.js";
     dispatch(handleProductClicked(clicked));
   },
   handleProductObject: product => {
-    dispatch(handleAddTodo(product));
+    dispatch(handleProductObject(product));
   }
 });
 

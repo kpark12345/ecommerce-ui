@@ -12,6 +12,9 @@ const Product = props => {
   const classes = useStyles();
   return (
     <div className={classes.root} >
+    <button onClick={()=> {
+      console.log('props', props)
+    }}>test</button>
     <p style={{color:'white'}}>PRODUCT PAGE</p>
     </div>
   );

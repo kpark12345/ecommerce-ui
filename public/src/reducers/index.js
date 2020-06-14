@@ -4,13 +4,14 @@ import { combineReducers } from 'redux';
 import entry from './todoEntryReducer';
 import todos from './todosReducer';
 import productClicked from './productClickedReducer';
-
+import productObject from './productObjectReducer';
 
 const rootReducers = combineReducers({
     // add reducer file references here
     entry,
     todos,
-    productClicked
+    productClicked,
+    productObject
 });
 
 export default rootReducers;

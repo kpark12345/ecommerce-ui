@@ -3,7 +3,7 @@ import Product from "./../components/Product.jsx";
 
 
  const mapStateToProps = store => ({
-  
+  productObject: store.productObject
 });
 
  const mapDispatchToProps = dispatch => ({
