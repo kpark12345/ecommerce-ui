@@ -90,7 +90,7 @@ const MobileHeader = (props) => {
       <AppBar style={{ background: "black" }}>
         <Tabs aria-label="simple tabs example">
           <Tab label="HOME" className={classes.tab} onClick={() => {
-            props.handleMerchClicked(false)
+            props.handleProductClicked(false)
             console.log(props)
           }}/>
           <Tab label="FAQS" className={classes.tab} />
