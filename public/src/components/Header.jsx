@@ -20,7 +20,7 @@ import clsx from "clsx";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    background: "#50C878",
+    background: "#39FF14",
     margin: "-10px",
   },
   button: {
@@ -38,6 +38,16 @@ const useStyles = makeStyles((theme) => ({
   fullList: {
     width: "auto",
   },
+  checkoutSideBar: {
+    width: '400px'
+  },
+  list: {
+    display:'flex', 
+    justifyContent: 'center'
+  },
+  paper: {
+    backgroundColor: "#39FF14"
+  }
 }));
 
 const Header = (props) => {
@@ -57,18 +67,19 @@ const Header = (props) => {
   };
   const list = (anchor) => (
     <div
-      role="checkout"
+      className={classes.checkoutSideBar}
+      role="checkout-sidebar"
     >
-      <List style={{display:'flex', justifyContent: 'center'}}>
+      <List className={classes.list}>
         <Typography>YOUR CART</Typography>
       </List>
       <Divider />
       <List>
-        <p>Example Product</p>
+        <Typography>Example Product</Typography>
       </List>
       <Divider />
       <List>
-        <p>Payment Methods</p>
+        <Typography>Payment Methods</Typography>
       </List>
     </div>
   );
@@ -111,7 +122,7 @@ const Header = (props) => {
         >
           ABOUT
         </Button>
-        <Grid container justify="flex-end" alignItems="center" style={{}}>
+        <Grid container justify="flex-end" alignItems="center" >
           <Button
             aria-controls="simple-menu"
             aria-haspopup="true"
@@ -123,6 +134,7 @@ const Header = (props) => {
       </Toolbar>
       <div>
         <Drawer
+          classes={{ paper: classes.paper }}
           anchor={"right"}
           open={state["right"]}
           onClose={toggleDrawer("right", false)}

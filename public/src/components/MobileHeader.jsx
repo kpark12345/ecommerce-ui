@@ -42,13 +42,22 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "5px",
     marginRight: "5px",
   },
+  checkoutSideBar: {
+    width: '300px'
+  },
+  list: {
+    display:'flex',
+    justifyContent: 'center', 
+  },
+  paper: {
+    backgroundColor: "#39FF14"
+  }
 }));
 
 const MobileHeader = (props) => {
   const classes = useStyles();
   const [state, setState] = React.useState({
     right: false,
-    left: false,
   });
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -64,55 +73,29 @@ const MobileHeader = (props) => {
     if(anchor === 'right') {
       return (
         <div
+        className={classes.checkoutSideBar}
         role="mobile-checkout"
       >
-        <List style={{display:'flex', justifyContent: 'center'}}>
+        <List className={classes.list}>
         <Typography>YOUR CART</Typography>
       </List>
       <Divider />
       <List>
-        <p>Example Product</p>
+        <Typography>Example Product</Typography>
       </List>
       <Divider />
       <List>
-        <p>Payment Methods</p>
+        <Typography>Payment Methods</Typography>
       </List>
       </div>
       )
-    } else if (anchor === 'left') {
-      return (
-        <div
-        role="mobile-sidenav"
-      >
-        <List style={{display:'flex', justifyContent: 'center'}}>
-        <Typography>Home</Typography>
-      </List>
-      <Divider />
-      <List>
-        <p>FAQS</p>
-      </List>
-      <Divider />
-      <List>
-        <p>ABOUT US</p>
-      </List>
-      </div>
-      )
-    }
+    } 
   }
   
   return (
     <div className={classes.root}>
       <AppBar style={{ background: "black" }}>
         <Tabs aria-label="simple tabs example">
-          <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            onClick={toggleDrawer("left", true)}
-            style={{ marginLeft: "10px" }}
-          >
-            <MenuIcon className={classes.menuButton} />
-          </IconButton>
           <Tab label="HOME" className={classes.tab} onClick={() => {
             props.handleMerchClicked(false)
             console.log(props)
@@ -132,18 +115,12 @@ const MobileHeader = (props) => {
       </AppBar>
       <div>
         <Drawer
+          classes={{ paper: classes.paper }}
           anchor={"right"}
           open={state["right"]}
           onClose={toggleDrawer("right", false)}
         >
           {list("right")}
-        </Drawer>
-        <Drawer
-          anchor={"left"}
-          open={state["left"]}
-          onClose={toggleDrawer("left", false)}
-        >
-          {list("left")}
         </Drawer>
       </div>
     </div>
