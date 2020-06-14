@@ -12,7 +12,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    background: "#FFCC00",
+    background: "#FFFF00",
     margin: "-10px"
   },
   button: {
