@@ -28,7 +28,7 @@ npm run dev:start
 ```
 ## Running
 
-Open the file `public/dist/index.html` in your browser
+localhost:9000
 
 
 ## API References
