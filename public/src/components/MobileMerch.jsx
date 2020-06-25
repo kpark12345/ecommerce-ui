@@ -18,9 +18,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-
-//considering either adding a react hook that holds an array of object with the products here or having it saved in redux's store, 
-
 const MobileMerch = (props) => {
   const classes = useStyles();
   return (
