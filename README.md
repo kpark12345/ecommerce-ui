@@ -26,10 +26,13 @@ To run in development mode:
 ```sh
 npm run dev:start
 ```
-## Running
+## Running 
 
 localhost:9000
 
 
 ## API References
+Stripe?
+Paypal?
+
 
