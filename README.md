@@ -21,14 +21,15 @@ To create a development build:
 npm run dev:build
 ```
 
+## Running 
+
+localhost:9000
+
 To run in development mode:
 
 ```sh
 npm run dev:start
 ```
-## Running 
-
-localhost:9000
 
 
 ## API References
