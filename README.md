@@ -33,7 +33,9 @@ npm run dev:start
 
 
 ## API References
-Stripe?
-Paypal?
+Stripe
+Paypal
+
+(Look up docs)
 
 
