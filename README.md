@@ -1,5 +1,5 @@
-# twitterpicasso.com
-Official website of tw1tterpicasso.com
+# Ecommerce-UI
+User interface for e-commerce website, with mobile friendly ui change
 
 ## Building and running on localhost
 
