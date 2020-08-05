@@ -62,7 +62,7 @@ const Footer = props => {
           alignItems="center"
           style={{}}
         >
-        <Typography className={classes.text}>@tw1tterpicasso</Typography>
+        <Typography className={classes.text}>Made by kevypark</Typography>
         </Grid>
       </Toolbar>
     </div>
