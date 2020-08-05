@@ -1,5 +1,6 @@
 # Ecommerce-UI
 User interface for e-commerce website, with mobile friendly ui change
+(Currently in progress of completion)
 
 ## Building and running on localhost
 
