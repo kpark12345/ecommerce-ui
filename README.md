@@ -4,7 +4,7 @@ User interface built on React-Redux and also implementing React hooks
 <br/>
 UI also has a mobile friendly UI change according to the pixel width set on the page- optimized for realtime page widths changes
 
-![](documentation/mobile-friendly-ui-change.gif)
+![](documentation/mobile-friendly-ui-change.mp4)
 
 ## Building and running on localhost
 
