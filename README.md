@@ -1,9 +1,7 @@
 # Ecommerce-UI
 User interface built on React-Redux and also implementing React hooks
-<br/>
-<br/>
-UI also has a mobile friendly UI change according to the pixel width set on the page- optimized for realtime page widths changes
 
+## Mobile Friendly UI Integration
 ![](documentation/ui-change-mobile.gif)
 
 ## Building and running on localhost
