@@ -1,6 +1,7 @@
 # Ecommerce-UI
 User interface built on React-Redux and also implementing React hooks
-
+<br/>
+(Currently in progress of completion)
 ## Mobile Friendly UI Integration
 ![](documentation/ui-change-mobile.gif)
 
